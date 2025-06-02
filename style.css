@@ -1,0 +1,110 @@
+body {
+            max-width: 1200px/*700px*/;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: sans-serif;
+        }
+
+        #chat {
+            display: flex;
+            flex-direction: column;
+            max-height: calc(100vh - 128px);
+            overflow-y: auto;
+        }
+
+        #chat .message {
+            background: black;
+            border-radius: 15px;
+            padding: 10px 15px;
+            margin: 5px 0;
+            max-width: 80%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        #chat .message .title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        #chat .message.user {
+            background: black;
+            align-self: flex-end;
+        }
+
+        #chat .message.bot {
+            background: black;
+            align-self: flex-start;
+        }
+
+        #chat .message.user.ghost {
+            opacity: 0.5;
+        }
+
+        #chat-input {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1200px/*700px*/;
+            background-color: #000000;
+            padding: 10px;
+            margin-bottom: 32px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #chat-input input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            font-size: 16px;
+        }
+
+        #chat-input input:focus {
+            outline: none;
+            border-color: #4b076c;
+            box-shadow: 0 0 5px rgba(91, 7, 98, .5);
+        }
+
+        #character-name {
+            position: absolute;
+            right: 100%;
+            top: 0;
+            width: 300px;
+            background-color: #000;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        html {
+            background-color: black;
+            color: white;
+        }
+
+        #character-name {
+            color: white;
+        }
+
+        input[type="text"],
+        input[type="search"],
+        input[type="password"],
+        input[type="email"],
+        input:not([type]) {
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+        }
+
+        input::placeholder, i {
+            color: #aaa;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+        }
